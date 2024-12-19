@@ -1,2 +1,4 @@
 Flask
 transformers
+torch
+tensorflow
