@@ -1,5 +1,5 @@
 Flask
 transformers
 torch
-tensorflow
-tf-keras==2.11.0
+tensorflow>=2.0
+tf-keras
