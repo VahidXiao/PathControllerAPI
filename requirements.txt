@@ -1,2 +1,2 @@
-Flask
-textblob
+Flask==2.2.5
+matplotlib==3.7.1
