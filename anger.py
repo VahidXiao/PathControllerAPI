@@ -41,13 +41,13 @@ def detect_anger():
     input_text = data.get('text', '')
     if not input_text:
         return jsonify({'error': 'The "text" field is required and cannot be empty'}), 400
-    
+
     language = data.get('language', 'en').lower()
     if not validate_language(language):
         return jsonify({
             'error': f"Unsupported language: {language}. Supported languages are {list(anger_dictionaries.keys())}"
         }), 400
-    
+
     try:
         confidence_threshold = float(data.get('confidence_threshold', 0))
         if not 0 <= confidence_threshold <= 1:
